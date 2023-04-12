@@ -32,7 +32,7 @@ jobs:
         uses: actions/cache@v3
         with:
           path: ~/.local
-          key: poetry-${{matrix.os}}-1.4.0-0
+          key: poetry-${{matrix.os}}-${{matrix.python-version}}-1.4.0-0
 
       - name: Install poetry
         uses: snok/install-poetry@v1
